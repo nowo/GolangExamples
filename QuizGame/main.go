@@ -61,6 +61,6 @@ func askQuestionsAndGetAnswers(QuestionArray []Questions) {
 }
 func main() {
 	readedFile := readFile("problems.csv")
-	QuestionArray := parseFileToStruct(readedFile)
-	askQuestionsAndGetAnswers(QuestionArray)
+	questionArray := parseFileToStruct(readedFile)
+	askQuestionsAndGetAnswers(questionArray)
 }
