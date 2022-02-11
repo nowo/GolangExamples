@@ -17,13 +17,12 @@ func readFile(filePath string) [][]string {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("Successfully Opened file")
+	fmt.Println("Welcome to the quiz game")
 	defer file.Close()
 	csvLines, err := csv.NewReader(file).ReadAll()
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(csvLines)
 	return csvLines
 }
 
